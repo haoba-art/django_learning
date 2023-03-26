@@ -506,6 +506,8 @@ id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告�
 
 　　git remote add origin https://github.com/tugenhua0707/testgit 关联一个远程库
 
+​		git remote remove origin 删除关联信息		
+
 　　git push –u(第一次要用-u 以后不需要) origin master 把当前master分支推送到远程库
 
 　　git clone https://github.com/tugenhua0707/testgit 从远程库中克隆
@@ -1761,7 +1763,7 @@ Thread.isAlive() ：顾名思义，是表示当前线程时候为可用状态，
    python的锁就解决这一问题，锁住线程，只允许一个线程操作，其他线程排队等待，待当前线程操作完毕后，再按顺序一个一个来运行。
 
 2. python的锁
-  python的threading模块提供了RLock锁解决方法。在某一时间只能让一个线程操作的语句放到RLock的acquire方法和release方法之间，即acquire相当于给RLack上锁，而release相当于解锁。
+    python的threading模块提供了RLock锁解决方法。在某一时间只能让一个线程操作的语句放到RLock的acquire方法和release方法之间，即acquire相当于给RLack上锁，而release相当于解锁。
 
   ```
   import threading
